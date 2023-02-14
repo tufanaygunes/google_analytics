@@ -28,7 +28,7 @@ load_dotenv()
 def initialize_analyticsreporting(id):
     VIEW_ID=id
     SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-    KEY_FILE_LOCATION = os.getenv("KEY")
+    KEY_FILE_LOCATION = 'ga_keys.json'
     credentials = service_account.Credentials.from_service_account_file(KEY_FILE_LOCATION)
     analytics = build('analyticsreporting', 'v4', credentials=credentials)
     return analytics
