@@ -126,7 +126,7 @@ app.layout = html.Div(children=[
     html.Div(children=[dcc.Dropdown(id='data-set-chosen', multi=False, value='252616533',
                                     options=[{'label':'Product Page Banner','value':'277875383'},
                                             {'label':'Low Stock Counter','value':'252616533'}])],style={'margin-bottom': '20px', 'width': '20%'}),
-    html.Div(id='time', children=[dcc.Dropdown(id='time', multi=False, value='7daysAgo',
+    html.Div(id='time2', children=[dcc.Dropdown(id='time', multi=False, value='7daysAgo',
                                     options=[{'label':'7daysAgo','value':'7daysAgo'},
                                             {'label':'30daysAgo','value':'30daysAgo'}])],style={'margin-bottom': '20px', 'width': '20%'}),                                        
     html.Div(id='datatable-interactivity-data', children=[]),
